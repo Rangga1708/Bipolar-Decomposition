@@ -14,7 +14,7 @@ Let's import some libraries we need first.
 ```
 import numpy as np
 import scipy.linalg as la
-import bipolar_decomposition as bp
+import bipolar_decomposition as bd
 ```
 
 Define the matrix we want to decompose.
@@ -26,7 +26,7 @@ Z = np.matrix([[1j,0,-1j],
 
 Then, let's decompose it.
 ```
-L,T,K,S = bp.bipolar(Z)
+L,T,K,S = bd.bipolar(Z)
 ```
 
 If you want to check the results, just multiply them all (don't forget to exponentiate them first).
